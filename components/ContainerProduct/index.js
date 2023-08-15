@@ -1,12 +1,19 @@
 import { View, Text,Pressable } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import { styles } from './style'
 
-export default function ContainerProduct({name}) {
+export default function ContainerProduct({name, deleteProduct}) {
+
   return (
 
     <Pressable 
-      style={styles.containerProduct}
+      style={({pressed}) => [
+        {
+          backgroundColor: pressed ? "#87cefa" : '#FFF',
+        },
+        styles.containerProduct,
+      ]}
+      onLongPress = {deleteProduct}
     >
 
       <Text style={styles.label}>{name}</Text>

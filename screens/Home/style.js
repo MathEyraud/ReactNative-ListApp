@@ -3,18 +3,14 @@ import React from 'react'
 
 export const styles = StyleSheet.create({
 
-    containerButton:{
-
+    container:{
         flex:1,
-
-        justifyContent:'center',
-        alignItems:'center',
-
-        borderRadius:10,    
+        padding:20,
+        gap : 20,
     },
 
     label:{
         fontSize:20,
     },
-
+    
 })

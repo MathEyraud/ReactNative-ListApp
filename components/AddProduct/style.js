@@ -3,12 +3,6 @@ import React from 'react'
 
 export const styles = StyleSheet.create({
 
-    container:{
-        flex:1,
-        padding:20,
-        gap : 20,
-    },
-
     containerTextInput:{
         flex:2,
         backgroundColor:'white',
@@ -34,8 +28,4 @@ export const styles = StyleSheet.create({
         gap:10,
     },
 
-    label:{
-        fontSize:20,
-    },
-    
 })

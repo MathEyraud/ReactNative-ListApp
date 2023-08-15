@@ -4,11 +4,12 @@ import React from 'react'
 export const styles = StyleSheet.create({
 
     containerProduct:{
-        backgroundColor:'white',
         height:100,
         width:'100%',
+        justifyContent:'center',
+        alignItems:'center',
 
-        marginTop:20,
+        marginVertical:10,
         borderRadius:20,
 
         shadowColor: "#000",
@@ -21,9 +22,6 @@ export const styles = StyleSheet.create({
 
         elevation: 2,
         overflow: 'visible',
-        
-        justifyContent:'center',
-        alignItems:'center',
     },
 
     label:{
