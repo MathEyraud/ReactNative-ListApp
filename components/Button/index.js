@@ -1,6 +1,8 @@
 import { View, Text,Pressable } from 'react-native'
 import React from 'react'
 import { styles } from './style'
+import Colors from '../../theme/colors'
+
 
 export default function Button({
   title,
@@ -15,7 +17,7 @@ export default function Button({
 
     <Pressable 
       style={({pressed}) => [
-        {backgroundColor: pressed ? colorButton + '90'  : (buttonEnabled ? colorButton : '#A0A0A0')},
+        {backgroundColor: pressed ? colorButton + '90'  : (buttonEnabled ? colorButton : Colors.disable)},
         {...styles.containerButton,...stylesPressable},
       ]}
       onPress={onPress}

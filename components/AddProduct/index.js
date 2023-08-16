@@ -2,6 +2,8 @@ import { View, TextInput, Keyboard } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import Button from '../Button'
 import { styles } from './style'
+import Colors from '../../theme/colors'
+import InputText from '../InputText'
 
 export default function AddProduct({addProduct}) {
 
@@ -61,10 +63,9 @@ export default function AddProduct({addProduct}) {
     return (
 
         <View style={styles.autoLRow}>
-        
-            <TextInput
-                style           = {styles.containerTextInput}
-                placeholder     = 'Nouveau produit'
+
+            <InputText    
+                placeholder     = "Nouveau produit"
                 onChangeText    = {handleInputChange}
                 value           = {product}
             />
@@ -73,7 +74,7 @@ export default function AddProduct({addProduct}) {
                 title           = "Ajouter"
                 onPress         = {() => handleClick(product)}
                 buttonEnabled   = {buttonEnabled}
-                colorButton     = "#87cefa"
+                colorButton     = {Colors.secondary}
             />
 
         </View>

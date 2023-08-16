@@ -4,19 +4,9 @@ import fonts from '../../theme/fonts'
 
 export const styles = StyleSheet.create({
 
-    containerButton:{
-
-        flex:1,
-
-        justifyContent:'center',
-        alignItems:'center',
-
-        borderRadius:10,    
-    },
-
     label:{
+        fontFamily:fonts.Primary,
         fontSize:20,
-        fontFamily: fonts.Primary
-    },
+    }
 
 })

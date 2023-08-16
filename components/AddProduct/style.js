@@ -1,25 +1,8 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import Colors from '../../theme/colors'
 
 export const styles = StyleSheet.create({
-
-    containerTextInput:{
-        flex:2,
-        backgroundColor:'white',
-        fontSize:20,
-        borderRadius:10,
-        paddingHorizontal:20,
-
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 1,
-        },
-        shadowOpacity: 0.20,
-        shadowRadius: 1.41,
-
-        elevation: 2,
-    },
 
     autoLRow:{
         flexDirection:'row',
